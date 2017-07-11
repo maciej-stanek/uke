@@ -1,6 +1,6 @@
 \documentclass[twoside]{article}
 \usepackage[a5paper
-	,marginparwidth=15mm
+	,marginparwidth=10mm
 	,marginparsep=2mm
 	,voffset=0mm
 	,headsep=4mm
@@ -11,6 +11,10 @@
 
 \usepackage{marginnote}
 \setlength{\parindent}{0mm}
+
+\usepackage{fontspec}
+\setmainfont{Ubuntu}
+\setmonofont{Ubuntu Mono}
 
 \usepackage{titlesec}
 \titleformat{\section}{\filcenter\normalfont}{\thesection}{0mm}{}[\rule{\textwidth}{0.1mm}\vspace{0mm}\centering]
@@ -28,6 +32,7 @@
 
 \usepackage{caption}
 \usepackage{graphicx}
+\usepackage{grffile}
 \usepackage{polski}
 \usepackage[utf8]{inputenc}
 
@@ -38,10 +43,15 @@
 
 %\maketitle
 
-\marginnote{\includegraphics[width=\marginparwidth]{takeszi.png}}[10mm]
-\marginnote{\includegraphics[width=\marginparwidth]{takeszi.png}}[30mm]
-\marginnote{\includegraphics[width=\marginparwidth]{takeszi.png}}[50mm]
-\marginnote{\includegraphics[width=\marginparwidth]{takeszi.png}}[70mm]
+\marginnote{
+	%\includegraphics[width=\marginparwidth]{chords/F\string##.png}
+	\includegraphics[width=\marginparwidth]{chords/F.png}
+	\includegraphics[width=\marginparwidth]{chords/C.png}
+	\includegraphics[width=\marginparwidth]{chords/D.png}
+	\includegraphics[width=\marginparwidth]{chords/G7.png}
+	\includegraphics[width=\marginparwidth]{chords/a.png}
+	\includegraphics[width=\marginparwidth]{chords/G.png}
+}[15mm]
 
 %F  2010
 %C  0003
