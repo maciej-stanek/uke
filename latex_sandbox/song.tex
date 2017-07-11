@@ -1,0 +1,74 @@
+\documentclass[twoside]{article}
+\usepackage[a5paper
+	,marginparwidth=15mm
+	,marginparsep=2mm
+	,voffset=0mm
+	,headsep=4mm
+	,footskip=4mm
+	,textheight=190mm
+	,textwidth=110mm
+]{geometry}
+
+\usepackage{marginnote}
+\setlength{\parindent}{0mm}
+
+\usepackage{titlesec}
+\titleformat{\section}{\filcenter\normalfont}{\thesection}{0mm}{}[\rule{\textwidth}{0.1mm}\vspace{0mm}\centering]
+\titlespacing{\section}{0mm}{0mm}{0mm}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyfoot[LE,RO]{\thepage}
+\renewcommand{\headrulewidth}{0mm}
+\renewcommand{\footrulewidth}{0mm}
+
+%\usepackage{showframe}
+
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+
+\author{Maciej Stanek}
+\title{Przykładowy tytuł}
+
+\begin{document}
+
+%\maketitle
+
+\marginnote{\includegraphics[width=\marginparwidth]{takeszi.png}}[10mm]
+\marginnote{\includegraphics[width=\marginparwidth]{takeszi.png}}[30mm]
+\marginnote{\includegraphics[width=\marginparwidth]{takeszi.png}}[50mm]
+\marginnote{\includegraphics[width=\marginparwidth]{takeszi.png}}[70mm]
+
+%F  2010
+%C  0003
+%D  2220
+%G7 0212
+%a  2000
+%G  0232
+
+\section{Hakuna Matata}
+\begin{verbatim}Intro: C
+
+       F       F               C      C
+Hakuna Matata, jak cudownie to brzmi!               F C
+       F      D           G7    G7
+Hakuna Matata to nie byle bzik.                     F D G7
+          a         F                 D    D
+I już się nie martw aż do końca twych dni.          a F D
+      C            C   G          G
+Naucz się tych dwóch radosnych słów:                C G
+       C
+Hakuna Matata!                                      C
+
+Outro: C F C\end{verbatim}
+
+\newpage
+
+\section{UKULELESONGTITLE}
+\begin{verbatim}UKULELESONGTEXT\end{verbatim}
+
+\end{document}
