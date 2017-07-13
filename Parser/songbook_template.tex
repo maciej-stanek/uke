@@ -3,28 +3,38 @@
 	,marginparwidth=10mm
 	,marginparsep=2mm
 	,voffset=0mm
-	,headsep=4mm
-	,footskip=4mm
-	,textheight=190mm
+	,headsep=0mm
+	,headheight=0mm
+	,footskip=8mm
+	,textheight=185mm
 	,textwidth=110mm
 ]{geometry}
 
 \usepackage{marginnote}
 \setlength{\parindent}{0mm}
 
+\usepackage{xcolor}
+\definecolor{shadecolor}{RGB}{200,200,200}
 \usepackage{fontspec}
 \setmainfont{Ubuntu}
 \setmonofont{Ubuntu Mono}
 
 \usepackage{titlesec}
-\titleformat{\section}{\filcenter\normalfont}{\thesection}{0mm}{}[\rule{\textwidth}{0.1mm}\vspace{0mm}\centering]
+\titleformat{\section}{\large\filcenter\normalfont}{\thesection}{0mm}{}[\rule{\textwidth}{0.1mm}\vspace{0mm}\centering]
 \titlespacing{\section}{0mm}{0mm}{0mm}
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\@verbatim}
+  {\verbatim@font}
+  {\verbatim@font\small}
+  {}{}
+\makeatother
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhead{}
 \fancyfoot{}
-\fancyfoot[LE,RO]{\thepage}
+\fancyfoot[LE,RO]{\colorbox{shadecolor}{\thepage}}
 \renewcommand{\headrulewidth}{0mm}
 \renewcommand{\footrulewidth}{0mm}
 
@@ -37,7 +47,7 @@
 \usepackage[utf8]{inputenc}
 
 \author{Maciej Stanek}
-\title{Przykładowy tytuł}
+\title{Śpiewnik Ukulele}
 
 \begin{document}
 
